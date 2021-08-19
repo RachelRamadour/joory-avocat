@@ -90,6 +90,10 @@ router.post("/send-email", async function (req, res, next) {
   transporter.sendMail(mailOptions, function (error, response) {
     if (error) {
       console.log(error);
+      res.render("contact", {
+        confirmation:
+          "Une erreur a eu lieu. Veuillez réessayer ou envoyez un mail directement à robertjoory@avocat-conseil.fr      ",
+      });
     } else {
       console.log("Message envoyé avec succès");
       res.render("contact", { confirmation: "Mail envoyé avec succès" });
