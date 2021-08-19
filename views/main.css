@@ -248,7 +248,8 @@ footer {
   font-size: 16px;
 }
 
-.card-body-entete {
+.card-body-entete,
+.card-body-entete-mentions {
   /* border: 0.5px solid #9dbee0; */
   margin-top: 30px;
   margin-bottom: 20px;
@@ -445,26 +446,6 @@ hr {
 
 /* contact */
 
-/* #tableau {
-  margin-top: 1%;
-  background-color: white;
-  z-index: 1px;
-} */
-/* #coordonnees {
-  text-align: center;
-  border: none;
-  font-size: 100%;
-  margin: auto;
-} */
-
-/* logos adresses */
-/* .Picto {
-  width: 40px;
-  max-width: 33%;
-  height: auto;
-  margin: 4px 150px;
-} */
-
 #contact {
   background-image: url(/assets/Joory_Contact.jpg);
   height: 600px;
@@ -496,7 +477,7 @@ hr {
 }
 
 .imgCoordonnees {
-  width: 40px;
+  width: 50px;
   margin: auto;
   /* width: 100%; */
 }
@@ -525,12 +506,16 @@ label {
   padding: auto;
 }
 textarea {
-  min-width: 400px;
+  /* min-width: 400px; */
   min-height: 300px;
   border: 1px solid #9dbee0;
   text-align: center;
   vertical-align: middle;
   font-size: 15px;
+  margin: auto;
+  margin-top: 30px;
+  width: 100%;
+  /* max-width: 400px; */
 }
 
 .submit {
@@ -545,21 +530,19 @@ textarea {
   font-weight: bold;
 }
 
-textarea {
-  margin: 10px;
-  margin-top: 30px;
-}
-
 input {
   border-left: none;
   border-right: none;
   border-top: none;
   border-bottom: solid 1px #9dbee0;
-  width: 400px;
+  width: 100%;
+  max-width: 400px;
   height: 30px;
   text-align: center;
   font-size: 15px;
-  margin: 15px;
+  margin: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 input:placeholder-shown {
@@ -600,4 +583,18 @@ hr {
 #confirmationEnvoiMessage {
   color: red;
   font-size: 15px;
+}
+
+/* mentions légales */
+
+.card-body-entete-mentions {
+  margin-top: 100px;
+}
+
+#franceRelance {
+  display: block;
+  margin: auto;
+  width: 300px;
+  margin-top: 170px;
+  margin-bottom: 15px;
 }
