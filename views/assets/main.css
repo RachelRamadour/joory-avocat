@@ -1,0 +1,443 @@
+/* nav,
+header {
+  display: block;
+} */
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  min-height: 100%;
+}
+body {
+  position: relative;
+  display: table;
+}
+
+/*header*/
+
+header {
+  background-color: white;
+  min-height: 120px;
+  padding: 0;
+  margin: 0;
+  border-bottom: 2px solid #9dbee0;
+}
+
+nav {
+  width: 100%;
+  margin: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  vertical-align: top;
+  float: right;
+  margin-right: 20%;
+}
+
+.licompetences {
+  text-align: center;
+  list-style-type: none;
+  padding: 0;
+  float: inherit;
+  vertical-align: middle;
+}
+
+li {
+  padding: 30px 0px 20px 20px;
+  float: left;
+}
+
+li a {
+  display: inline-block;
+  margin: 8px;
+  margin-top: 40px;
+  color: #9dbee0;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.logo {
+  height: 100px;
+  width: auto;
+  margin: auto;
+  float: left;
+  padding: 10px;
+  padding-left: 20%;
+}
+
+.dropdownIcon {
+  display: none;
+}
+
+/*header responsive*/
+
+li a:hover {
+  background-color: #9dbee0;
+  color: white;
+}
+
+li a:active {
+  color: #727272;
+}
+
+/*fin header*/
+
+/*Présentation Robert*/
+
+p,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  width: 60%;
+  line-height: 1.5;
+  margin: auto;
+  text-align: center;
+}
+
+h1 {
+  color: #9dbee0;
+  font-size: 30px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+h2 {
+  color: #9dbee0;
+  font-size: 30px;
+  margin-bottom: 20px;
+  text-align: center;
+  margin-top: 2%;
+  margin-bottom: 1%;
+}
+
+p,
+div {
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.container {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  text-align: center;
+}
+
+p a {
+  text-decoration: none;
+  color: #9dbee0;
+}
+
+p a:hover {
+  background-color: #9dbee0;
+  color: white;
+}
+
+table {
+  width: 60%;
+  margin-right: 20%;
+  margin-left: 20%;
+}
+
+.tablecompetences {
+  border: 1px solid #9dbee0;
+  margin-bottom: 5%;
+  margin-top: 5%;
+  padding: 0;
+  text-align: center;
+  width: 300px;
+  height: 300px;
+  margin-right: 200px;
+  margin-left: 200px;
+  margin-left: 200px;
+}
+
+.tablecompetences ol {
+  padding: 0;
+  margin: 10 10;
+}
+
+.img_table {
+  height: 10%;
+  width: auto;
+}
+
+td {
+  width: auto;
+  margin: 0;
+  padding: 0;
+}
+
+form,
+.tableform {
+  text-align: center;
+  font-size: 20px;
+  width: 60%;
+  height: auto;
+  align-self: center;
+  box-shadow: 4px 4px 10px 1px #9dbee0;
+  margin: auto;
+  margin-bottom: 2%;
+}
+
+label {
+  text-align: center;
+}
+
+input {
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom: solid 1px #9dbee0;
+  width: 400px;
+  height: 30px;
+  text-align: center;
+  font-size: 15px;
+}
+
+.note {
+  font-size: 12px;
+  text-align: center;
+  margin: auto;
+  padding: auto;
+}
+textarea {
+  min-width: 400px;
+  min-height: 300px;
+  border: 1px solid #9dbee0;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 15px;
+}
+
+.submit {
+  background-color: #9dbee0;
+  color: white;
+  height: auto;
+  width: auto;
+  padding: 10px;
+  text-align: center;
+  word-wrap: break-word;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+input:placeholder-shown {
+  text-align: center;
+  vertical-align: middle;
+  color: #9dbee0;
+}
+
+.Picto {
+  width: 40px;
+  max-width: 33%;
+  height: auto;
+  margin: 4px 150px;
+}
+
+#coordonnees {
+  text-align: center;
+  border: none;
+  font-size: 25px;
+  margin: auto;
+}
+
+hr {
+  width: 60%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border: 1px solid #9dbee0;
+}
+
+/*Footer*/
+
+footer {
+  background-color: rgba(157, 190, 224, 0.4);
+  color: #727272;
+  font-size: 16px;
+}
+
+footer .container {
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.text-block a {
+  color: #727272;
+}
+
+#gauche {
+  text-align: left;
+}
+
+#centre {
+  text-align: center;
+}
+
+#droit {
+  text-align: right;
+}
+
+#imgaccueil {
+  background-image: url();
+  background-size: contain;
+  background-color: black;
+  background-repeat: no-repeat;
+  margin: auto;
+  padding: auto;
+}
+
+#colonne1 {
+  float: left;
+  width: 50%;
+  background: white;
+  margin: auto;
+  padding: auto;
+}
+
+#colonne2 {
+  float: right;
+  width: 50%;
+  background: #9dbee0;
+  margin: auto;
+  padding: auto;
+  color: white;
+}
+
+#texteimg {
+  background-image: url(Joory_Palais.jpg);
+  background-color: black;
+  opacity: 8;
+  width: auto;
+  height: 600px;
+  background-position: center;
+}
+
+#bghonoraires {
+  background-image: url(Joory_Honoraires.jpg);
+  height: 600px;
+  width: 100%;
+  background-position: right;
+  animation-name: fadeInUp;
+}
+
+#contact {
+  background-image: url(Joory_Contact.jpg);
+  height: 600px;
+  width: 100%;
+  background-position: bottom;
+  padding: 0;
+  margin: 0;
+}
+
+#bgcompetences {
+  background-image: url(Joory_Competences.jpg);
+  background-position: right;
+  height: 600px;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+h1.titre {
+  display: block;
+  color: white;
+  background: rgba(4, 4, 4, 0.4);
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 350px;
+  text-align: center;
+}
+
+#photo {
+  width: 160px;
+  float: left;
+  margin-right: 1%;
+  vertical-align: middle;
+  text-align: center;
+  margin-top: 8px;
+}
+
+#tableau {
+  margin-top: 1%;
+  background-color: white;
+  z-index: 1px;
+}
+p.alinea {
+  margin-top: 1%;
+  margin-bottom: 1%;
+  text-indent: 3%;
+}
+
+/*Mobile*/
+
+@media screen and (max-width: 900px) {
+  ul.topnav li:not(:nth-child(1)) {
+    display: none;
+  }
+
+  ul.topnav li.dropdownIcon {
+    display: block;
+    float: right;
+  }
+
+  ul.topnav.responsive li.dropdownIcon {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  ul.topnav.responsive {
+    position: relative;
+  }
+
+  ul.topnav.responsive li {
+    display: inline;
+    float: none;
+  }
+
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+}
+
+.text-block {
+  text-align: center;
+}
+
+.text-block a {
+  color: #727272;
+  text-decoration: underline;
+}
+
+.text-block-2 {
+  text-align: right;
+}
+
+section {
+  margin-right: 30px;
+  margin-left: 30px;
+}
+
+a {
+  cursor: pointer;
+}
+/* 
+
+
+
+.navigation-item {
+  padding: 15px 30px;
+  text-align: center;
+} */

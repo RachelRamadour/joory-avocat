@@ -1,0 +1,592 @@
+body {
+  margin: auto;
+  width: 100%;
+  min-height: 100vh;
+  font-family: sans-serif;
+}
+
+.content,
+.row-card,
+.container-fluid,
+.container,
+.content-competences {
+  width: 60%;
+  margin: auto;
+}
+
+.content-competences {
+  display: flex;
+}
+
+.bodyCompetences {
+  min-height: 62vh;
+}
+
+/* navbar */
+.logo,
+.navbar-brand {
+  height: auto;
+  width: 205px;
+  max-height: 100%;
+  /* padding-bottom: 10px; */
+}
+
+.nav-item {
+  padding-left: 1%;
+  padding-right: 1%;
+}
+
+.nav-link {
+  color: #9dbee0 !important;
+  text-align: center;
+  width: 110%;
+}
+
+.nav-link:hover {
+  background-color: #9dbee0 !important;
+  color: white !important;
+}
+
+.button-nav {
+  background-color: #9dbee0;
+  border: none;
+  color: white;
+  width: 150px;
+}
+
+.navbar-collapse {
+  max-width: 500px;
+  font-size: 14px;
+}
+
+.navbar-toggler:hover,
+.navbar-toggler {
+  color: #9dbee0 !important;
+}
+
+.nav-active {
+  /* color: #727272 !important; */
+  color: rgba(157, 190, 224, 0.2) !important;
+}
+
+/* Accueil */
+/* couverture titre */
+#texteimg {
+  background-image: url(/assets/Joory_Palais.jpg);
+  min-height: 600px;
+  background-position: center;
+}
+
+h1.titre {
+  color: white;
+  background: rgba(4, 4, 4, 0.4);
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 350px;
+  text-align: center;
+}
+
+.sous-titre-accueil {
+  text-align: center;
+  color: #727272;
+  font-style: normal;
+  margin-top: 20px;
+}
+
+.sous-titre-accueil,
+.sous-titre-accueil::before,
+.sous-titre-accueil::after {
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.sous-titre-accueil::before,
+.sous-titre-accueil::after {
+  height: 2px;
+  width: 70px;
+  background: #9dbee0;
+  content: "";
+}
+
+.hCompetences {
+  margin-bottom: 6%;
+  margin-left: 14px;
+  margin-top: -1%;
+}
+
+#photo {
+  width: 160px;
+  float: left;
+  margin-right: 30px;
+  /* vertical-align: middle; */
+  /* text-align: center; */
+  /* margin-top: 8px; */
+  border-radius: 50%;
+  border: 1px solid #727272;
+  padding-top: 1%;
+}
+
+/* footer */
+.text-block-1 {
+  text-align: left;
+}
+
+.text-block-2 {
+  text-align: center;
+}
+
+.col a {
+  color: #727272;
+  text-decoration: underline;
+}
+
+.col a:hover {
+  color: white;
+}
+
+.text-block-3 {
+  text-align: right;
+}
+
+/* section {
+  margin-right: 30px;
+  margin-left: 30px;
+  width: 60%;
+} */
+
+a {
+  cursor: pointer;
+}
+
+.container {
+  /* display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-around; */
+  width: 100%;
+  margin-top: 5%;
+  text-align: center;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  margin: auto;
+}
+
+footer {
+  background-color: rgba(157, 190, 224, 0.4);
+  color: #727272;
+  font-size: 12px;
+  padding-bottom: 0px;
+  /* position: fixed; */
+  /* width: 100%; */
+}
+
+/* COMPETENCES */
+/* Card compétences */
+
+.bodyCompetences {
+  margin-top: 50px;
+  margin-left: 5%;
+  width: 150%;
+  max-width: 700px;
+}
+
+.div-competences {
+  margin-top: 10px;
+}
+
+.card {
+  border-top: 0.5px solid rgba(157, 190, 224, 0.2);
+  border-left: 0.5px solid rgba(157, 190, 224, 0.2);
+  margin-bottom: 10%;
+  padding: 1%;
+  text-align: center;
+  color: black;
+  /* background-color: rgba(157, 190, 224, 0.1); */
+  box-shadow: 8px 8px 2px 0.5px rgba(157, 190, 224, 0.2);
+  height: 90%;
+}
+
+.card-index {
+  border-top: 0.5px solid rgba(157, 190, 224, 0.2);
+  border-left: 0.5px solid rgba(157, 190, 224, 0.2);
+  margin-bottom: 10%;
+  padding: 5%;
+  text-align: center;
+  color: black;
+  /* background-color: rgba(157, 190, 224, 0.1); */
+  box-shadow: 0 0 20px rgba(157, 190, 224, 0.5);
+  height: 90%;
+  border-radius: 10px;
+}
+.row-card {
+  /* display: flex; */
+  /* align-content: center; */
+  justify-content: center;
+}
+
+.card-title {
+  color: #727272;
+  font-size: 20px;
+  /* text-decoration: underline #9dbee0; */
+  /* text-align: center; */
+}
+
+.card-text {
+  font-size: 16px;
+}
+
+.card-body-entete {
+  /* border: 0.5px solid #9dbee0; */
+  margin-top: 30px;
+  margin-bottom: 20px;
+  padding: 30px;
+  text-align: center;
+  color: black;
+  background-color: rgba(157, 190, 224, 0.2);
+  /* box-shadow: 8px 8px 2px 1px rgba(157, 190, 224, 0.2); */
+  height: 90%;
+  border-radius: 20px;
+}
+.card-body-entete p {
+  margin: 0;
+}
+
+.button-card {
+  background-color: #9dbee0;
+  border: 1px solid #9dbee0;
+  font-size: 15px;
+  color: white;
+  /* width: 150px; */
+  padding: 6px 12px 6px 12px;
+  border-radius: 1.25rem;
+}
+.button-card:hover {
+  background-color: white;
+  border: 1px solid #9dbee0;
+  font-size: 15px;
+  color: #9dbee0;
+  /* width: 150px; */
+  /* padding: 6px 12px 6px 12px;
+    border-radius: 1.25rem; */
+}
+
+hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid #9dbee0;
+}
+
+/* Honoraires */
+
+.content-hon {
+  margin-bottom: 40px;
+}
+
+.button-hon {
+  background-color: #727272;
+  color: white;
+  width: 100%;
+  /* max-width: 400px; */
+  text-transform: uppercase;
+  border-radius: 10px;
+  /* margin-left: 100px;
+  margin-right: 100px; */
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.button-hon:hover {
+  border: 1px solid #727272;
+  background-color: rgba(157, 190, 224, 0.2);
+  color: #727272;
+  width: 100%;
+}
+
+.content-hon-button {
+  align-content: center;
+  /* margin: 0; */
+  width: 100%;
+  /* padding: auto; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  vertical-align: center;
+}
+
+.card-hon {
+  margin-bottom: 1%;
+  padding: 20px;
+  padding-bottom: 5px;
+  margin-bottom: 25px;
+  border-radius: 20px;
+}
+
+.aHon {
+  color: #9dbee0;
+
+  /* width: 15%; */
+}
+
+.aHon:hover {
+  color: black;
+  text-decoration: underline #9dbee0;
+  /* width: 15%; */
+}
+
+#bghonoraires {
+  background-image: url(/assets/Joory_Honoraires.jpg);
+  height: 500px;
+  width: 100%;
+  background-position: center;
+}
+
+.card-body-entete {
+  /* border: 0.5px solid #9dbee0; */
+  margin-top: 30px;
+  margin-bottom: 20px;
+  padding: 30px;
+  text-align: center;
+  color: black;
+  background-color: rgba(157, 190, 224, 0.2);
+  /* box-shadow: 8px 8px 2px 1px rgba(157, 190, 224, 0.2); */
+  height: 90%;
+}
+.card-body-entete p {
+  margin: 0;
+}
+
+.button-card {
+  background-color: #9dbee0;
+  border: 1px solid #9dbee0;
+  font-size: 15px;
+  color: white;
+  /* width: 150px; */
+  padding: 6px 12px 6px 12px;
+  border-radius: 1.25rem;
+}
+.button-card:hover {
+  background-color: white;
+  border: 1px solid #9dbee0;
+  font-size: 15px;
+  color: #9dbee0;
+  /* width: 150px; */
+  /* padding: 6px 12px 6px 12px;
+    border-radius: 1.25rem; */
+}
+
+/* Compétences */
+
+.menu-competences {
+  list-style: none;
+  /* border: 1px solid black; */
+  text-align: left;
+  padding-left: 0;
+  background-color: rgba(157, 190, 224, 0.2);
+  width: 100%;
+  max-width: 250px;
+  height: 100%;
+  margin-top: 50px;
+  /* margin-bottom: 200%; */
+}
+
+.li-competences {
+  padding: 10px;
+}
+
+/* .li-competences:hover {
+  height: 100%;
+} */
+
+.li-competences:hover {
+  background-color: #9dbee0;
+}
+
+.li-active {
+  background-color: #727272;
+}
+
+.li-active a {
+  color: white !important;
+}
+
+.divider-competences {
+  padding: 0.5px;
+  margin: 0;
+  color: #727272;
+}
+
+.li-competences a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+.soustitre-competences {
+  margin-bottom: 1%;
+  margin-left: 14px;
+  color: #727272;
+  font-size: 150%;
+  margin-top: 5%;
+}
+
+/* contact */
+
+/* #tableau {
+  margin-top: 1%;
+  background-color: white;
+  z-index: 1px;
+} */
+/* #coordonnees {
+  text-align: center;
+  border: none;
+  font-size: 100%;
+  margin: auto;
+} */
+
+/* logos adresses */
+/* .Picto {
+  width: 40px;
+  max-width: 33%;
+  height: auto;
+  margin: 4px 150px;
+} */
+
+#contact {
+  background-image: url(/assets/Joory_Contact.jpg);
+  height: 600px;
+  width: 100%;
+  background-position: bottom;
+  padding: 0;
+  margin: 0;
+}
+
+#titleForm {
+  color: #9dbee0;
+  font-size: 30px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#coordonneesCabinet {
+  display: flex;
+  margin: auto;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-coordonnees {
+  border: none;
+  box-shadow: none;
+  margin-bottom: 0px;
+}
+
+.imgCoordonnees {
+  width: 40px;
+  margin: auto;
+  /* width: 100%; */
+}
+
+/* formulaire de contact */
+#contactForm {
+  text-align: center;
+  font-size: 20px;
+  width: 60%;
+  height: auto;
+  align-self: center;
+  box-shadow: 4px 4px 10px 1px #9dbee0;
+  margin: auto;
+  margin-bottom: 2%;
+  padding: 5%;
+}
+
+label {
+  text-align: center;
+}
+
+.note {
+  font-size: 12px;
+  text-align: center;
+  margin: auto;
+  padding: auto;
+}
+textarea {
+  min-width: 400px;
+  min-height: 300px;
+  border: 1px solid #9dbee0;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 15px;
+}
+
+.submit {
+  background-color: #9dbee0;
+  color: white;
+  height: auto;
+  width: auto;
+  padding: 10px;
+  text-align: center;
+  word-wrap: break-word;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+textarea {
+  margin: 10px;
+  margin-top: 30px;
+}
+
+input {
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom: solid 1px #9dbee0;
+  width: 400px;
+  height: 30px;
+  text-align: center;
+  font-size: 15px;
+  margin: 15px;
+}
+
+input:placeholder-shown {
+  text-align: center;
+  vertical-align: middle;
+  color: #9dbee0;
+}
+
+#inputSend {
+  border: none;
+  width: 200px;
+  height: 40px;
+  text-align: center;
+  font-size: 15px;
+  background-color: #9dbee0;
+  color: white;
+}
+
+#inputSend :hover {
+  color: #9dbee0;
+}
+
+hr {
+  width: 60%;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border: 1px solid #9dbee0;
+}
+
+.note {
+  font-size: 12px;
+  text-align: center;
+  margin: auto;
+  padding: auto;
+}
+
+#confirmationEnvoiMessage {
+  color: red;
+  font-size: 15px;
+}

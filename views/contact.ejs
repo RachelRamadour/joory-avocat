@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <script src="script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
+
+    <title>Robert Joory Avocat</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img class='logo' src='/assets/Logo_Cabinet_Joory_Avocat.png'></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="/index.ejs">ACCUEIL</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            COMPÉTENCES
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="/droit-administratif.ejs">Droit administratif</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="/droit-immobilier.ejs">Droit immobilier</a></li>
+                            <li><a class="dropdown-item" href="/droit-contrat.ejs">Droit des contrats</a></li>
+                            <li><a class="dropdown-item" href="/recouvrement-et-execution.ejs">Recouvrement et
+                                    exécution</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+
+                            <li><a class="dropdown-item" href="/droit-etrangers.ejs">Droit des étrangers</a></li>
+                            <li><a class="dropdown-item" href="/droit-asile.ejs">Droit d'asile</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+
+                            <li><a class="dropdown-item" href="/droit-logement.html">Droit du logement</a></li>
+
+
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="/honoraires.html">HONORAIRES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-active" href="/contact.html"><button class="button-nav">NOUS
+                                CONTACTER</button></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div id="contact">
+        <h1 class="titre"><br>Nous contacter<br><br></h1>
+    </div>
+
+
+    <!-- coordonnées -->
+
+    <div id="coordonneesCabinet">
+
+        <div class="card card-coordonnees" style="width: 18rem;">
+            <img class="card-img-top imgCoordonnees" src="/assets/Joory_Adresse.png" alt="Card image cap">
+            <div class="card-body">
+                <p class="card-text">23 rue des Francs-Bourgeois
+                    <br> 75004 Paris
+                </p>
+            </div>
+        </div>
+
+        <div class="card card-coordonnees" style="width: 18rem;">
+            <img class="card-img-top imgCoordonnees" src="/assets/Joory_Telephone.png" alt="Card image cap">
+            <div class="card-body">
+                <p class="card-text">+33 6 89 92 21 18
+                </p>
+            </div>
+        </div>
+
+        <div class="card card-coordonnees" style="width: 18rem;">
+            <img class="card-img-top imgCoordonnees" src="/assets/Joory_Mail.png" alt="Card image cap">
+            <div class="card-body">
+                <p class="card-text">robertjoory@avocat-conseil.fr
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <hr>
+
+
+
+
+
+
+
+    <form id="contactForm" action="/send-email" method="POST">
+
+        <h1 id="titleForm">Formulaire de contact</h1>
+
+        <input type="text" name="name" placeholder="Nom" required="required">
+        <input type="text" name="firstName" placeholder="Prénom" required="required">
+
+        <input type="email" name="email" placeholder="Email" required="required">
+
+        <input type="tel" name="tel" placeholder="Téléphone" required="required">
+
+        <textarea name="message" placeholder="Votre message" required="required"></textarea>
+
+        <br><br>
+        <p class="note">*Champs Obligatoires</p>
+        <p class="note">En soumettant ce formulaire, j'accepte que les informations saisies soient exploitées dans
+            le cadre de la demande de contact et de la relation commerciale qui peut en découler.</p>
+        <br>
+        <input id="inputSend" type="submit" value="Envoyer le message">
+        <!-- 
+        <input type="hidden" name="_next" value="http://127.0.0.1:5501/merci.html">
+        <input type="hidden" name="_subject" value="New submission!">
+        <input type="hidden" name="_captcha" value="false"> -->
+        <p id="confirmationEnvoiMessage">
+          <%=confirmation%>
+        </p>
+
+    </form>
+    <!-- <form method="post" name="contact-form" action="send_email.php">
+        Your Name:
+        <input type="text" name="name">
+        Email Address:
+        <input type="text" name="email">
+        Message:
+        <textarea name="message"></textarea>
+            <input type="submit" value="Submit">
+        </form>
+
+        <script language="JavaScript">
+        var frmvalidator = new Validator("contactform");
+        frmvalidator.addValidation("name", "req", "Please provide your name");
+        frmvalidator.addValidation("email", "req", "Please provide your email");
+        frmvalidator.addValidation("email", "email",
+            "Please enter a valid email address");
+    </script>
+
+        <form method="post" action="send_email.php" enctype="multipart/form-data">
+            <div class="emailform">
+                <input type="text" placeholder="Name" name="name" style="width:450px; padding:5px;" required><br>
+                <input type="text" placeholder="Email" name="email" style="width:450px; padding:5px;" required><br>
+                <textarea name="message" placeholder="Message" style="width:450px; padding: 5px; height: 155px;"
+                    required></textarea><br>
+                <button type="submit" name="send">Send</button>
+            </div>
+        </form> -->
+
+
+    <footer>
+        <div class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="text-block-1">Robert Joory <br> 32 rue des Francs Bourgeois <br> 75004 Paris
+                            <br><br>0689922118<br>robertjoory@gmail.com
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="text-block-2"><br>Prendre rendez-vous <br><br> <a href="/Contact.html">Nous
+                                contacter</a></div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="text-block-3">Tous droits réservés <br><br>Mentions légales<br><br>Développé par
+                            Rachel RAMADOUR
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        </div>
+    </footer>
+
+</body>
+
+</html>
