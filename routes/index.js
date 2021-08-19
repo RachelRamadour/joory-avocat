@@ -13,6 +13,42 @@ router.get("/", function (req, res, next) {
   res.render("index", { title: "Express" });
 });
 
+router.get("/droit-administratif", function (req, res, next) {
+  res.render("droit-administratif");
+});
+
+router.get("/droit-immobilier", function (req, res, next) {
+  res.render("droit-immobilier");
+});
+
+router.get("/droit-contrat", function (req, res, next) {
+  res.render("droit-contrat");
+});
+
+router.get("/recouvrement-et-execution", function (req, res, next) {
+  res.render("recouvrement-et-execution");
+});
+
+router.get("/droit-etrangers", function (req, res, next) {
+  res.render("droit-etrangers");
+});
+
+router.get("/droit-asile", function (req, res, next) {
+  res.render("droit-asile");
+});
+
+router.get("/droit-logement", function (req, res, next) {
+  res.render("droit-logement");
+});
+
+router.get("/honoraires", function (req, res, next) {
+  res.render("honoraires");
+});
+
+router.get("/mentions-legales", function (req, res, next) {
+  res.render("mentions-legales");
+});
+
 router.get("/contact", function (req, res, next) {
   console.log("confirmation", confirmation);
   res.render("contact", { confirmation: confirmation });

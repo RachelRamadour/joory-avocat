@@ -1,3 +1,5 @@
+/* couleurs ::aftergris : #727272 - rgb(114,114,114)	 */
+
 body {
   margin: auto;
   width: 100%;
@@ -72,14 +74,14 @@ body {
 /* Accueil */
 /* couverture titre */
 #texteimg {
-  background-image: url(/assets/Joory_Palais.jpg);
-  min-height: 600px;
+  background-image: url(/assets/palais6.jpg);
+  height: 600px;
+  background-size: cover;
   background-position: center;
 }
-
 h1.titre {
   color: white;
-  background: rgba(4, 4, 4, 0.4);
+  background: rgba(157, 190, 224, 0.6);
   width: 100%;
   height: auto;
   position: absolute;
@@ -131,6 +133,15 @@ h1.titre {
 /* footer */
 .text-block-1 {
   text-align: left;
+}
+
+.aFooter {
+  color: #727272;
+}
+
+.aFooter:hover {
+  color: #727272;
+  cursor: pointer;
 }
 
 .text-block-2 {
@@ -339,7 +350,7 @@ hr {
 
 #bghonoraires {
   background-image: url(/assets/Joory_Honoraires.jpg);
-  height: 500px;
+  height: 600px;
   width: 100%;
   background-position: center;
 }
