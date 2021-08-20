@@ -47,9 +47,10 @@ body {
 
 .navbar-toggler .navbar-toggler-icon {
   display: block;
-  width: 18px;
+  width: 22px;
   height: 1px;
   border-radius: 1px;
+  padding: 8px;
 }
 
 .container-fluid {
