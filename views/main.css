@@ -29,7 +29,8 @@ body {
 .navbar-brand {
   height: auto;
   width: 205px;
-  max-height: 90%;
+  /* max-height: 40%; */
+  max-width: 90%;
   margin: 0px;
   padding: 0px;
   /* padding-bottom: 10px; */
