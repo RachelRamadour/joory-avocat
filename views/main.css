@@ -25,19 +25,35 @@ body {
 }
 
 /* navbar */
-.logo,
-.navbar-brand {
+.logo {
   height: auto;
-  width: 205px;
-  /* max-height: 40%; */
-  max-width: 90%;
+  width: 180px;
+  max-width: 80%;
   margin: 0px;
   padding: 0px;
   /* padding-bottom: 10px; */
 }
 
-.container-fluid {
+.navbar-brand {
+  margin: 0px;
   padding: 0px;
+  max-width: 150px;
+}
+
+.navbar-toggler,
+.navbar-toggler-icon {
+  padding: 5px;
+}
+
+.navbar-toggler .navbar-toggler-icon {
+  display: block;
+  width: 18px;
+  height: 1px;
+  border-radius: 1px;
+}
+
+.container-fluid {
+  justify-content: center;
 }
 
 .nav-item {
