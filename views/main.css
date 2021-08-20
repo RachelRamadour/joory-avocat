@@ -45,6 +45,9 @@ body {
   padding: 5px;
 }
 
+.navbar-toggler {
+  border: 2px solid;
+}
 .navbar-toggler .navbar-toggler-icon {
   display: block;
   width: 22px;
