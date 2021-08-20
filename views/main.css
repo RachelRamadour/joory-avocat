@@ -330,7 +330,7 @@ hr {
 .button-hon {
   background-color: #727272;
   color: white;
-  width: 100%;
+  min-width: 100%;
   /* max-width: 400px; */
   text-transform: uppercase;
   border-radius: 10px;
@@ -339,13 +339,13 @@ hr {
   margin: auto;
   margin-top: 10px;
   margin-bottom: 15px;
+  font-size: 70%;
 }
 
 .button-hon:hover {
   border: 1px solid #727272;
   background-color: rgba(157, 190, 224, 0.2);
   color: #727272;
-  width: 100%;
 }
 
 .content-hon-button {
