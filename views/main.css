@@ -161,8 +161,13 @@ h1.titre {
 }
 
 /* footer */
-.text-block-1 {
+/* .text-block-1 {
   text-align: left;
+} */
+
+.row-footer {
+  display: flex;
+  align-items: center;
 }
 
 .aFooter {
@@ -174,9 +179,9 @@ h1.titre {
   cursor: pointer;
 }
 
-.text-block-2 {
+/* .text-block-2 {
   text-align: center;
-}
+} */
 
 .col a {
   color: #727272;
@@ -187,9 +192,13 @@ h1.titre {
   color: white;
 }
 
-.text-block-3 {
-  text-align: right;
+.text-block {
+  text-align: center;
 }
+
+/* .text-block-3 {
+  text-align: right;
+} */
 
 /* section {
   margin-right: 30px;
@@ -498,18 +507,24 @@ hr {
   margin-top: 20px;
   align-items: center;
   justify-content: center;
+  height: 200px;
 }
 
 .card-coordonnees {
   border: none;
   box-shadow: none;
   margin-bottom: 0px;
+  display: flex;
+  vertical-align: top;
 }
 
 .imgCoordonnees {
   width: 50px;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
   /* width: 100%; */
+  margin-top: 0px;
 }
 
 /* formulaire de contact */
@@ -583,7 +598,8 @@ input:placeholder-shown {
 
 #inputSend {
   border: none;
-  width: 200px;
+  width: 100%;
+  max-width: 300px;
   height: 40px;
   text-align: center;
   font-size: 15px;

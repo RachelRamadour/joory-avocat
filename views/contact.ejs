@@ -132,8 +132,8 @@
         <textarea name="message" placeholder="Votre message" required="required"></textarea>
 
         <br><br>
-        <p class="note">*Champs Obligatoires</p>
-        <p class="note">En soumettant ce formulaire, j'accepte que les informations saisies soient exploitées dans
+        <p class="note">* Champs Obligatoires</p>
+       <br> <p class="note">En soumettant ce formulaire, j'accepte que les informations saisies soient exploitées dans
             le cadre de la demande de contact et de la relation commerciale qui peut en découler.</p>
         <br>
         <input id="inputSend" type="submit" value="Envoyer le message">
@@ -146,33 +146,7 @@
         </p>
 
     </form>
-    <!-- <form method="post" name="contact-form" action="send_email.php">
-        Your Name:
-        <input type="text" name="name">
-        Email Address:
-        <input type="text" name="email">
-        Message:
-        <textarea name="message"></textarea>
-            <input type="submit" value="Submit">
-        </form>
-
-        <script language="JavaScript">
-        var frmvalidator = new Validator("contactform");
-        frmvalidator.addValidation("name", "req", "Please provide your name");
-        frmvalidator.addValidation("email", "req", "Please provide your email");
-        frmvalidator.addValidation("email", "email",
-            "Please enter a valid email address");
-    </script>
-
-        <form method="post" action="send_email.php" enctype="multipart/form-data">
-            <div class="emailform">
-                <input type="text" placeholder="Name" name="name" style="width:450px; padding:5px;" required><br>
-                <input type="text" placeholder="Email" name="email" style="width:450px; padding:5px;" required><br>
-                <textarea name="message" placeholder="Message" style="width:450px; padding: 5px; height: 155px;"
-                    required></textarea><br>
-                <button type="submit" name="send">Send</button>
-            </div>
-        </form> -->
+    
 
 
         <%- include('footer') %>
