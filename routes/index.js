@@ -92,7 +92,7 @@ router.post("/send-email", async function (req, res, next) {
       console.log(error);
       res.render("contact", {
         confirmation:
-          "Une erreur a eu lieu. Veuillez réessayer ou envoyez un mail directement à robertjoory@avocat-conseil.fr      ",
+          "Une erreur a eu lieu. Veuillez réessayer ou envoyez un mail directement à joory.robert@avocat-conseil.fr     ",
       });
     } else {
       console.log("Message envoyé avec succès");

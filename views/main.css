@@ -300,6 +300,19 @@ footer {
   height: 90%;
   border-radius: 20px;
 }
+
+.card-body-entete-mentions {
+  padding: 30px 100px 30px 100px;
+}
+
+.card-body-entete-mentions p {
+  text-align: justify;
+}
+
+.card-body-entete-mentions h1 {
+  margin-bottom: 40px;
+}
+
 .card-body-entete p {
   margin: 0;
 }
@@ -666,4 +679,9 @@ hr {
   display: flex;
   align-items: center;
   vertical-align: middle;
+}
+
+h6 {
+  font-weight: bold;
+  text-decoration: underline;
 }
